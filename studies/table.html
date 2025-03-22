@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete HTML Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        th,
+        td {
+            border: 2px solid #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        thead {
+            background-color: #ccc;
+        }
+
+        tfoot {
+            background-color: #ddd;
+            font-weight: bold;
+        }
+
+        colgroup col:first-child {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>All Table Elements in One HTML Page</h2>
+
+    <table>
+        <!-- Table Caption -->
+        <caption>Employee Salary Report</caption>
+
+        <!-- Colgroup to style specific columns -->
+        <colgroup>
+            <col style="background-color: #eef;"> <!-- First column -->
+            <col> <!-- Second column -->
+            <col style="background-color: #ddd;"> <!-- Third column -->
+            <col> <!-- Fourth column -->
+        </colgroup>
+
+        <!-- Table Header -->
+        <thead>
+            <tr>
+                <th scope="col">Employee Name</th>
+                <th scope="col">Department</th>
+                <th scope="col">Role</th>
+                <th scope="col">Salary ($)</th>
+            </tr>
+        </thead>
+
+        <!-- Table Body -->
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>IT</td>
+                <td>Developer</td>
+                <td>60,000</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>HR</td>
+                <td>Manager</td>
+                <td>55,000</td>
+            </tr>
+            <tr>
+                <td>Mike Johnson</td>
+                <td>Marketing</td>
+                <td>Analyst</td>
+                <td>50,000</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Sarah Williams</td>
+                <td rowspan="2">Finance</td>
+                <td>Accountant</td>
+                <td>65,000</td>
+            </tr>
+            <tr>
+                <td>Auditor</td>
+                <td>68,000</td>
+            </tr>
+            <tr>
+                <td colspan="3">Total Employees</td>
+                <td>4</td>
+            </tr>
+        </tbody>
+
+        <!-- Table Footer -->
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Salary Paid</td>
+                <td>$298,000</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>

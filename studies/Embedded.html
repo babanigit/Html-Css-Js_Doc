@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Content Elements in HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid #444;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        iframe, video, audio, embed, object {
+            width: 80%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Embedded Content Elements in HTML</h2>
+    <div class="container">
+
+        <!-- Image Element -->
+        <h3>1. Image</h3>
+        <img src="https://via.placeholder.com/400" alt="Sample Image" width="400">
+
+        <!-- Picture Element -->
+        <h3>2. Responsive Picture</h3>
+        <picture>
+            <source srcset="https://via.placeholder.com/600" media="(min-width: 800px)">
+            <source srcset="https://via.placeholder.com/400" media="(min-width: 400px)">
+            <img src="https://via.placeholder.com/200" alt="Responsive Image">
+        </picture>
+
+        <!-- Figure and Figcaption -->
+        <h3>3. Figure with Caption</h3>
+        <figure>
+            <img src="https://via.placeholder.com/300" alt="Figure Image">
+            <figcaption>This is an image caption.</figcaption>
+        </figure>
+
+        <!-- Audio Element -->
+        <h3>4. Audio</h3>
+        <audio controls>
+            <source src="sample-audio.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+
+        <!-- Video Element -->
+        <h3>5. Video</h3>
+        <video controls width="600">
+            <source src="sample-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Iframe (Embedding External Web Content) -->
+        <h3>6. Embedded Website (iFrame)</h3>
+        <iframe src="https://www.wikipedia.org/" width="600" height="300"></iframe>
+
+        <!-- Embed Element -->
+        <h3>7. Embedded PDF</h3>
+        <embed src="sample.pdf" type="application/pdf" width="600" height="400">
+
+        <!-- Object Element -->
+        <h3>8. Embedded Flash Content</h3>
+        <object data="flash-content.swf" width="400" height="300">
+            Your browser does not support embedded Flash content.
+        </object>
+
+        <!-- SVG (Scalable Vector Graphics) -->
+        <h3>9. SVG Graphic</h3>
+        <svg width="200" height="100">
+            <rect width="200" height="100" style="fill:blue;"></rect>
+        </svg>
+
+    </div>
+
+</body>
+</html>

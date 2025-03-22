@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structural Elements in HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            background: #f4f4f4;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        article {
+            background: #ddd;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        aside {
+            background: #f4f4f4;
+            padding: 10px;
+            margin-top: 10px;
+            border-left: 4px solid #ccc;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>My Website</h1>
+        <p>Welcome to my structured HTML page</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        
+        <!-- Section 1 -->
+        <section>
+            <h2>About Us</h2>
+            <p>This section provides details about our website.</p>
+        </section>
+
+        <!-- Section 2 -->
+        <section>
+            <h2>Our Blog</h2>
+            
+            <!-- Article 1 -->
+            <article>
+                <h3>Article 1: The Importance of Web Design</h3>
+                <p>Web design plays a crucial role in user experience...</p>
+            </article>
+
+            <!-- Article 2 -->
+            <article>
+                <h3>Article 2: How HTML5 Changed Web Development</h3>
+                <p>HTML5 introduced several semantic elements...</p>
+            </article>
+
+        </section>
+
+        <!-- Sidebar (Aside) -->
+        <aside>
+            <h3>Related Links</h3>
+            <ul>
+                <li><a href="#">HTML Guide</a></li>
+                <li><a href="#">CSS Tips</a></li>
+                <li><a href="#">JavaScript Tricks</a></li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 My Website | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

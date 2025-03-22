@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Elements in HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        .container {
+            width: 60%;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid #444;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        button, details, summary {
+            font-size: 16px;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        dialog {
+            border: 2px solid #333;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        progress, meter {
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Interactive Elements in HTML</h2>
+    <div class="container">
+        
+        <!-- Button Element -->
+        <h3>1. Button Element</h3>
+        <button onclick="alert('Button Clicked!')">Click Me</button>
+
+        <!-- Details & Summary -->
+        <h3>2. Expandable Content</h3>
+        <details>
+            <summary>Click to Expand</summary>
+            <p>This is hidden content revealed when clicked.</p>
+        </details>
+
+        <!-- Dialog Box -->
+        <h3>3. Dialog Box</h3>
+        <button onclick="document.getElementById('myDialog').showModal()">Open Dialog</button>
+        <dialog id="myDialog">
+            <p>This is a dialog box!</p>
+            <button onclick="document.getElementById('myDialog').close()">Close</button>
+        </dialog>
+
+        <!-- Progress Bar -->
+        <h3>4. Progress Bar</h3>
+        <progress value="70" max="100"></progress>
+
+        <!-- Meter (Measurement Gauge) -->
+        <h3>5. Meter (Value Indicator)</h3>
+        <meter value="8" min="0" max="10" low="3" high="7" optimum="8"></meter>
+
+        <!-- Content Editable -->
+        <h3>6. Editable Text</h3>
+        <div contenteditable="true" style="border: 1px solid #000; padding: 10px;">
+            Click here to edit this text.
+        </div>
+
+    </div>
+
+</body>
+</html>
